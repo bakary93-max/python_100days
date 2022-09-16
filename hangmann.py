@@ -72,7 +72,7 @@ while not end_of_game:
     print(blanks)
     if guess not in word:
         life -= 1
-        print(f"erreur il te reste {life} vies")
+        print(f"The letter {guess} is not in the word. You have {life}  lives left")
         print(stages[life])
         if life == 0:
             end_of_game = True
