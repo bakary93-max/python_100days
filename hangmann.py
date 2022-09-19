@@ -1,65 +1,11 @@
 import random
+from hangman_art import stages
+from hangman_art import logo
 
-stages = ['''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========
-''']
-
+print(logo)
 life = 6
-listswords = ["bakary", "bouba","younouss"]
-word = random.choice(listswords)
+list_of_words = ["bakary", "bouba","younouss"]
+word = random.choice(list_of_words)
 blanks = list("_" * len(word))
 
 end_of_game = False
